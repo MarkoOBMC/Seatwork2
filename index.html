@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Containers Demo</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .container{
+      background-color: grey;
+      padding: 30px;
+      border: 30px auto;
+      color: white;
+      border-radius: 5px;
+      padding-bottom: 20px;
+      max-width: 70%;
+    }
+    .labels{
+      text-align: left;
+    }
+    body{
+      background-image: url(background3.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-family: Trebuchet MS, sans-serif;
+      font-size: 18px;
+    }
+    input[type="text"],
+    input[type="email"],
+    select option,
+    textarea{
+      border-style: outset;
+      padding: 5px;
+      font-family: Roboto, sans-serif;
+      border-radius: 5px;
+    }
+    .btn-primary{
+      width: 8%;
+      padding: 3px;
+      border-radius: 5px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="mb-4 text-center">Robotics Club Registration Form</h1> 
+    <form>
+    <div class="row mb-3">
+      <div class="col-md-6 mb-2">
+        <label class="labels">Name:</label> <br>
+        <input type="text" id="name" placeholder="Input name here..." style="width: 100%;">
+      </div>
+
+      <div class="col-md-6 mb-2">
+        <label class="labels">Age:</label> <br>
+        <input type="text" id="age" placeholder="Input age here..." style="width: 100%">
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-md-6 mb-2">
+        <label class="labels">Email:</label> <br>
+        <input type="email" id="email" placeholder="Input email here..." style="width:100%">
+      </div>
+
+      <div class="col-md-6 mb-2">
+        <label class="labels">Phone number:</label> <br>
+        <input type="text" id="phonenumber" placeholder="Input phone number here..." style="width:100%">
+      </div>
+
+    </div>
+    <div class="text-left mt-3">
+    <p class="mb-2">Preffered Robotics topics</p>
+        <input type="checkbox" id="checkbox">
+        <label>Programming</label> <br>
+
+        <input type="checkbox" id="checkbox">
+        <label>Electronics</label> <br> 
+
+        <input type="checkbox" id="checkbox">
+        <label>Mechanical Design</label> <br>
+
+        <label for="radio">Robotics experience level</label> <br>
+        <input type="radio" id="radio1" name="radio" value="Beginner"> Beginner <br>
+
+        <input type="radio" id="radio2" name="radio" value="Intermediate"> Intermediate <br>
+
+        <input type="radio" id="radio3" name="radio" value="Expert"> Expert
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <label class="label mt-3">Preffered Robotics Project</label> <br>
+        <select id="project" style="width:100%; padding: 3px;">
+          <option disabled selected>Choose a project...</option>
+          <option value="Autonomous Navigation Systems">Autonomous Navigation Systems</option>
+
+          <option value="Humanoid Robotics">Humanoid Robotics</option>
+
+          <option value="Industrial Automation">Industrial Automation</option>
+
+          <option value="Robotic Vision Systems">Robotic Vision Systems</option>
+
+          <option value="Medical Robotics">Medical Robotics</option>
+
+          <option value="None of the above">None of the above</option> 
+        </select> 
+      </div>
+
+    </div>
+    <div class="row mb-2">
+    <div class="col-sm-12">
+    <label class="label mt-3">Statement of Interest</label> <br>
+    <textarea id="interest" rows="4" placeholder="Input statement/s here..." style="width:100%"></textarea>
+    </div>
+    </div>
+    <button class="btn-primary mb-0">Submit</button>
+    </form>
+    </div>
+
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
